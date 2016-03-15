@@ -1,0 +1,32 @@
+$share-regular: '/assets/fonts/share_regular_macroman/Share-Regular-webfont';
+$share-bold: '/assets/fonts/share_bold_macroman/Share-Bold-webfont';
+$share-italic: '/assets/fonts/share_italic_macroman/Share-Italic-webfont';
+
+@mixin webfont-src($path) {
+  src: url('#{$path}.eot'); /* IE9 Compat Modes */
+  src: url('#{$path}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('#{$path}.woff') format('woff'), /* Pretty Modern Browsers */
+       url('#{$path}.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('#{$path}.svg#svgCooperHewitt') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+  font-family: 'Share';
+  font-style: normal;
+  font-weight: 400;
+  @include webfont-src($share-regular);
+}
+
+@font-face {
+  font-family: 'Share';
+  font-style: normal;
+  font-weight: 600;
+  @include webfont-src($share-bold);
+}
+
+@font-face {
+  font-family: 'Share';
+  font-style: italic;
+  font-weight: 40;
+  @include webfont-src($share-italic);
+}

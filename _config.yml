@@ -1,0 +1,6 @@
+# Site settings
+title: Charis Braun
+
+# Build settings
+markdown: kramdown
+exclude: [Gemfile, Gemfile.lock, Guardfile]

@@ -1,0 +1,7 @@
+body {
+  border-top: 5px solid $hilight-color;
+
+  @include media-query($on-tablet) {
+    background: gray;
+  }
+}
