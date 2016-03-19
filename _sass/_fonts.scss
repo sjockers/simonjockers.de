@@ -1,32 +1,32 @@
-$share-regular: '/assets/fonts/share_regular_macroman/Share-Regular-webfont';
-$share-bold: '/assets/fonts/share_bold_macroman/Share-Bold-webfont';
-$share-italic: '/assets/fonts/share_italic_macroman/Share-Italic-webfont';
+$base-path: '/assets/fonts/';
 
-@mixin webfont-src($path) {
-  src: url('#{$path}.eot'); /* IE9 Compat Modes */
-  src: url('#{$path}.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('#{$path}.woff') format('woff'), /* Pretty Modern Browsers */
-       url('#{$path}.ttf')  format('truetype'), /* Safari, Android, iOS */
-       url('#{$path}.svg#svgCooperHewitt') format('svg'); /* Legacy iOS */
+@mixin webfont-src($font-family, $file-name) {
+  src: url('#{$base-path}#{$font-family}/EOT/#{$file-name}.eot') format('embedded-opentype'),
+       url('#{$base-path}#{$font-family}/WOFF/OTF/#{$file-name}.otf.woff') format('woff'),
+       url('#{$base-path}#{$font-family}/OTF/#{$file-name}.otf') format('opentype'),
+       url('#{$base-path}#{$font-family}/TTF/#{$file-name}.ttf') format('truetype');
 }
 
 @font-face {
-  font-family: 'Share';
+  font-family: 'Source Serif Pro';
   font-style: normal;
-  font-weight: 400;
-  @include webfont-src($share-regular);
+  font-weight: normal;
+  font-stretch: normal;
+  @include webfont-src(source-serif-pro, SourceSerifPro-Light);
 }
 
 @font-face {
-  font-family: 'Share';
+  font-family: 'Source Serif Pro';
   font-style: normal;
-  font-weight: 600;
-  @include webfont-src($share-bold);
+  font-weight: bold;
+  font-stretch: normal;
+  @include webfont-src(source-serif-pro, SourceSerifPro-Regular);
 }
 
 @font-face {
-  font-family: 'Share';
-  font-style: italic;
-  font-weight: 40;
-  @include webfont-src($share-italic);
+  font-family: 'Source Code Pro';
+  font-style: normal;
+  font-weight: normal;
+  font-stretch: normal;
+  @include webfont-src(source-code-pro, SourceCodePro-Medium);
 }
