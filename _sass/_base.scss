@@ -100,12 +100,14 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
     color: $hilight-color;
-    text-decoration: underline;
+    font-weight: bold;
+    text-decoration: none;
 
     &:hover,
     &:active,
     &:focus {
-        color: darken($hilight-color, 15%);
+        color: darken($hilight-color, 10%);
+        border-bottom: 2px solid darken($hilight-color, 10%);
     }
 }
 
