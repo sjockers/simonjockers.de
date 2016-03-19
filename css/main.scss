@@ -4,7 +4,6 @@
 @charset "utf-8";
 
 
-
 // Our variables
 $base-font-family: 'Source Serif Pro', Georgia, serif;
 $base-font-size:   24px;
@@ -29,17 +28,17 @@ $on-laptop:        1140px;
 //     }
 // }
 @mixin media-query($device) {
-    @media screen and (min-width: $device) {
-        @content;
-    }
+  @media screen and (min-width: $device) {
+    @content;
+  }
 }
 
 
 
 // Import partials from `sass_dir` (defaults to `_sass`)
 @import
-        "fonts",
-        "base",
-        "layout",
-        "syntax-highlighting"
+  "fonts",
+  "base",
+  "layout",
+  "syntax-highlighting"
 ;

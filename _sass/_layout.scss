@@ -1,7 +1,9 @@
 body {
   border-top: 5px solid $hilight-color;
+  max-width: $on-laptop;
+  margin: 0 auto;
 
   @include media-query($on-tablet) {
-    background: gray;
+
   }
 }
