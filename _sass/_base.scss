@@ -42,7 +42,7 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 %vertical-rhythm {
-  margin-bottom: $spacing-unit / 2;
+  margin-bottom: $padding / 2;
 }
 
 
@@ -74,7 +74,7 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: $padding;
 }
 
 li {
@@ -89,8 +89,17 @@ li {
 /**
  * Headings
  */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: 600;
+h1, h2 {
+  font-size: $large-font-size;
+  font-weight: bold;
+}
+
+h3, h4, h5, h6 {
+  margin: $base-line-height 0 0 0;
+  padding: 0;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+  font-weight: normal;
 }
 
 
@@ -100,7 +109,7 @@ h1, h2, h3, h4, h5, h6 {
  */
 a {
   color: $hilight-color;
-  font-weight: bold;
+  font-weight: normal;
   text-decoration: none;
 
   &:hover,
@@ -118,7 +127,7 @@ a {
  */
 blockquote {
   border-left: 4px solid $hilight-color;
-  padding-left: $spacing-unit / 2;
+  padding-left: $padding / 2;
   font-size: 18px;
   letter-spacing: -1px;
   font-style: italic;
@@ -158,28 +167,6 @@ pre {
 
 
 /**
- * Wrapper
- */
-.wrapper {
-  max-width: -webkit-calc(800px - (#{$spacing-unit} * 2));
-  max-width:         calc(800px - (#{$spacing-unit} * 2));
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: $spacing-unit;
-  padding-left: $spacing-unit;
-  @extend %clearfix;
-
-  @include media-query($on-laptop) {
-    max-width: -webkit-calc(800px - (#{$spacing-unit}));
-    max-width:         calc(800px - (#{$spacing-unit}));
-    padding-right: $spacing-unit / 2;
-    padding-left: $spacing-unit / 2;
-  }
-}
-
-
-
-/**
  * Clearfix
  */
 %clearfix {
@@ -188,24 +175,5 @@ pre {
     content: "";
     display: table;
     clear: both;
-  }
-}
-
-
-
-/**
- * Icons
- */
-.icon {
-
-  > svg {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    vertical-align: middle;
-
-    path {
-      fill: $background-color;
-    }
   }
 }

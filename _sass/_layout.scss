@@ -1,9 +1,127 @@
+html {
+  background: $hilight-color;
+}
+
 body {
   border-top: 5px solid $hilight-color;
+  background: white;
+}
+
+.container {
   max-width: $on-laptop;
-  margin: 0 auto;
 
   @include media-query($on-tablet) {
-
+    margin: $padding*2 auto;
   }
+
+  @include media-query($on-laptop) {
+    margin: $padding*3 auto;
+  }
+
+}
+
+.main {
+  padding: $padding;
+  margin-top: 0;
+  font-family: $text-font-family;
+
+  a {
+    font-weight: bold;
+  }
+
+  @include media-query($on-tablet) {
+    display: block;
+    width: 66%;
+    float: left;
+  }
+
+  @include media-query($on-laptop) {
+    width: 50%;
+
+    &.main--featured {
+      font-size: $large-font-size;
+    }
+  }
+}
+
+.main--featured {
+
+}
+
+.sidebar {
+  padding: $padding;
+  margin: 0;
+  display: block;
+  float: left;
+
+  @include media-query($on-tablet) {
+    width: 33%;
+    border: 1px solid red;
+  }
+
+
+  @include media-query($on-laptop) {
+    width: 50%;
+    padding-left: 220px;
+  }
+}
+
+.navigation {
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    margin: .25em 0;
+    padding: 0;
+  }
+}
+
+.footer {
+  position: relative;
+  display: block;
+  width: 100%;
+  clear: both;
+  overflow: hidden;
+  background: $background-color;
+  font-size: $small-font-size;
+
+  &:before {
+    @include media-query($on-tablet) {
+      content: "";
+      position: absolute;
+      display: block;
+      background: darken($hilight-color, 10);
+      top: 0;
+      bottom: 0;
+      width: 66%;
+    }
+
+    @include media-query($on-laptop) {
+      width: 50%;
+    }
+  }
+
+  .footer__container {
+    padding: $padding;
+
+    @include media-query($on-tablet) {
+      width: 33%;
+      border: 1px solid red;
+      margin-left: 66%;
+    }
+
+    @include media-query($on-laptop) {
+      width: 50%;
+      margin-left: 50%;
+      padding-left: 220px;
+    }
+  }
+}
+
+.pgp-fingerprint {
+  white-space: pre-line;
 }

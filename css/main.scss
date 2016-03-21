@@ -5,12 +5,15 @@
 
 
 // Our variables
-$base-font-family: 'Source Serif Pro', Georgia, serif;
-$base-font-size:   24px;
-$small-font-size:  12px;
+$base-font-family: "Source Code", monospace;
+$text-font-family: "Source Serif Pro", Georgia, serif;
+
+$base-font-size:   20px;
+$small-font-size:  16px;
+$large-font-size:  24px;
 $base-line-height: 1.6;
 
-$spacing-unit:     30px;
+$padding:          30px;
 
 $text-color:       #040404;
 $hilight-color:    #1f9f76;
@@ -23,8 +26,8 @@ $on-laptop:        1140px;
 // Using media queries with like this:
 // @include media-query($palm) {
 //     .wrapper {
-//         padding-right: $spacing-unit / 2;
-//         padding-left: $spacing-unit / 2;
+//         padding-right: $padding / 2;
+//         padding-left: $padding / 2;
 //     }
 // }
 @mixin media-query($device) {
