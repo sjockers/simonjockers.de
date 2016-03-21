@@ -14,11 +14,6 @@ body {
   @include media-query($screen-s) {
     margin: $padding*2 auto;
   }
-
-  @include media-query($screen-l) {
-    margin: $padding*3 auto;
-  }
-
 }
 
 .main {
@@ -54,10 +49,11 @@ body {
   margin: 0;
   display: block;
   float: left;
-  font-size: $small-font-size;
+  font-size: $base-font-size;
 
   @include media-query($screen-s) {
     width: 40%;
+    font-size: $small-font-size;
   }
 
   @include media-query($screen-m) {
@@ -99,7 +95,10 @@ body {
       content: "";
       position: absolute;
       display: block;
-      background: darken($hilight-color, 10);
+      background-color: darken($hilight-color, 10);
+      background-image: url('/assets/images/portrait.jpg');
+      background-position: right center;
+      background-size: cover;
       top: 0;
       bottom: 0;
       width: 60%;
@@ -120,7 +119,7 @@ body {
     @include media-query($screen-s) {
       width: 40%;
       margin-left: 60%;
-      min-height: 400px;
+      min-height: 420px;
     }
 
     @include media-query($screen-m) {
@@ -132,7 +131,8 @@ body {
       width: 50%;
       margin-left: 50%;
       padding-left: 220px;
-      min-height: 500px;
+      padding-top: $padding*3;
+      min-height: 560px;
     }
   }
 }
