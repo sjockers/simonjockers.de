@@ -95,13 +95,20 @@ h1, h2 {
 }
 
 h3, h4, h5, h6 {
-  margin: $base-line-height 0 0 0;
+  margin: 1.6em 0 0 0;
   padding: 0;
-  font-size: $base-font-size;
+  font-size: $small-font-size;
   line-height: $base-line-height;
   font-weight: normal;
 }
 
+
+/**
+ * Paragraphs
+ */
+p {
+  margin: 0 0 1.6em 0;
+}
 
 
 /**

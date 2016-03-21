@@ -19,8 +19,9 @@ $text-color:       #040404;
 $hilight-color:    #1f9f76;
 $background-color: lighten($hilight-color, 50);
 
-$on-tablet:        620px;
-$on-laptop:        1140px;
+$screen-s:        620px;
+$screen-m:        768px;
+$screen-l:        1140px;
 
 
 // Using media queries with like this:
