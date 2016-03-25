@@ -1,24 +1,18 @@
-<!DOCTYPE html>
-<html>
+---
+layout: base
+---
 
-  {% include head.html %}
+<div class="container">
 
-  <body class="{{ page.body-class }}">
+  <main class="main">
+    {{ content }}
+  </main>
 
-    <div class="container">
+  <aside class="sidebar">
+    {% include navigation.html %}
+  </aside>
 
-      <main class="main">
-        {{ content }}
-      </main>
+</div>
 
-      <aside class="sidebar">
-        {% include navigation.html %}
-      </aside>
+{% include footer--portrait.html %}
 
-    </div>
-
-    {% include footer--portrait.html %}
-
-  </body>
-
-</html>
