@@ -66,6 +66,13 @@ body {
   }
 }
 
+.sidebar--narrow {
+  @include media-query($screen-l) {
+    width: 33%;
+    padding-left: 0;
+  }
+}
+
 .navigation {
   margin-bottom: $padding*2;
 
@@ -146,5 +153,61 @@ body {
 
   @include media-query($screen-l) {
     white-space: pre-line;
+  }
+}
+
+.main--listing {
+  @include media-query($screen-l) {
+    width: 66%;
+  }
+
+  dl {
+    overflow: hidden;
+    padding-top: $padding/2;
+  }
+
+  dt {
+    display: block;
+    font-size: $base-font-size;
+    padding-top: $padding;
+    border-top: 1px solid black;
+
+    @include media-query($screen-l) {
+      width: 25%;
+      margin-right: 5%;
+      padding-top: $padding/2;
+      float: left;
+      clear: both;
+    }
+  }
+
+  dd {
+    display: block;
+
+    @include media-query($screen-l) {
+      width: 70%;
+      float: right;
+      padding-top: $padding/2;
+      border-top: 1px solid black;
+    }
+  }
+
+  h3 {
+    margin: 0;
+    padding: 0;
+    font-size: $base-font-size;
+    font-weight: bold;
+  }
+
+  p {
+    margin: 0;
+  }
+
+  ul {
+    padding: $padding/2 0;
+
+    @include media-query($screen-l) {
+      margin: 0;
+    }
   }
 }

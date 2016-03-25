@@ -74,7 +74,8 @@ figcaption {
  * Lists
  */
 ul, ol {
-  margin-left: $padding;
+  margin: 0 0 $padding $padding;
+  padding: 0;
 }
 
 li {
@@ -89,7 +90,15 @@ li {
 /**
  * Headings
  */
-h1, h2 {
+h1 {
+  color: $hilight-color;
+  margin: 0;
+  font-size: $large-font-size;
+  font-weight: bold;
+}
+
+h2 {
+  margin: $padding 0 0 0;
   font-size: $large-font-size;
   font-weight: bold;
 }

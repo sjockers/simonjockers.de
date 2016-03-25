@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+  {% include head.html %}
+
+  <body class="{{ page.body-class }}">
+
+    <div class="container">
+
+      <main class="main main--listing">
+        {{ content }}
+      </main>
+
+      <aside class="sidebar sidebar--narrow">
+        {% include navigation.html %}
+      </aside>
+
+    </div>
+
+    {% include footer--portrait.html %}
+
+  </body>
+
+</html>
