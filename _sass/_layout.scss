@@ -202,12 +202,13 @@ body {
 
   dd {
     display: block;
+    padding-bottom: $padding/2;
 
     @include media-query($screen-l) {
       width: 70%;
       float: right;
       margin-left: 5%;
-      padding-top: $padding/2;
+      padding: $padding/2 0;
       border-top: 1px solid black;
     }
   }
@@ -224,7 +225,7 @@ body {
   }
 
   ul {
-    padding: $padding/2 0;
+    padding: $padding/2 0 0 0;
 
     @include media-query($screen-l) {
       margin: 0;
