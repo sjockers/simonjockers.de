@@ -21,8 +21,10 @@ layout: base
             <span class="project-list__client">{{ project.client }}</span>
           </div>
         </header>
-        <img class="project__screenshot" src="{{ project.teaser.image }}" alt="{{ project.teaser.alt }}" />
-        <p class="project-list__teaser">{{ project.teaser.text }}</p>
+        <figure class="project__screenshot">
+          <figcaption>{{ project.teaser.text }}</figcaption>
+          <img src="{{ project.teaser.image }}" alt="{{ project.teaser.alt }}" />
+        </figure>
       </a>
     </article>
   </li>

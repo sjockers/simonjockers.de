@@ -17,7 +17,7 @@
 
 .project-list__item {
   @extend .container;
-  padding: 30px;
+  padding: 0 30px;
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -33,3 +33,21 @@
   color: $accent-color;
 }
 
+.project__screenshot {
+  margin: 0;
+  padding: 0;
+
+  @include media-query($screen-m) {
+    display: block;
+    width: 66%;
+    float: left;
+  }
+
+  > img {
+    padding-top: 25px;
+    background: #dadada;
+    border: 1px solid #adadad;
+    border-radius: 5px 5px 0 0;
+  }
+
+}
