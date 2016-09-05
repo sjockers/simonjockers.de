@@ -1,0 +1,32 @@
+---
+layout: base
+---
+
+<div class="container">
+  <main class="main">
+    {{ content }}
+  </main>
+</div>
+
+<ul class="project-list">
+{% assign projects = site.projects | sort: 'order' %}
+{% for project in projects %}
+  <li>
+    <article class="project-list__item">
+      <a href="{{ project.url }}">
+        <header>
+          <h2 class="project-list__title">{{ project.title }}</h2>
+          <div class="project-list__meta">
+            <time class="project-list__year">{{ project.year }}</time> ·
+            <span class="project-list__client">{{ project.client }}</span>
+          </div>
+        </header>
+        <img class="project__screenshot" src="{{ project.teaser.image }}" alt="{{ project.teaser.alt }}" />
+        <p class="project-list__teaser">{{ project.teaser.text }}</p>
+      </a>
+    </article>
+  </li>
+{% endfor %}
+</ul>
+
+{% include footer.html %}

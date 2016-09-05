@@ -1,0 +1,35 @@
+.project-list {
+  width: 100%;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+
+  > li {
+    display: block;
+    margin: 0;
+    padding: 0;
+  }
+
+  > li:nth-child(odd) {
+    background: $background-color;
+  }
+}
+
+.project-list__item {
+  @extend .container;
+  padding: 30px;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.project-list__title {
+  font-family: $text-font-family;
+  font-size: $large-font-size;
+}
+
+.project-list__meta {
+  font-family: $base-font-family;
+  font-size: $small-font-size;
+  color: $accent-color;
+}
+

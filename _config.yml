@@ -4,3 +4,14 @@ title: Simon Jockers
 # Build settings
 markdown: kramdown
 exclude: [Gemfile, Gemfile.lock, Guardfile]
+
+# Collection: Projects
+collections:
+  projects:
+    output: true
+
+defaults:
+  - scope:
+      type: projects
+    values:
+      layout: project

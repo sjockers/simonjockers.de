@@ -16,6 +16,7 @@ $base-line-height: 1.6;
 $padding:          30px;
 
 $text-color:       #040404;
+$accent-color:     #676767;
 $hilight-color:    #1f9f76;
 $background-color: lighten($hilight-color, 50);
 
@@ -44,5 +45,6 @@ $screen-l:        1140px;
   "fonts",
   "base",
   "layout",
+  "project-list",
   "syntax-highlighting"
 ;
