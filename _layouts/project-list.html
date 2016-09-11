@@ -14,15 +14,19 @@ layout: base
   <li>
     <article class="project-list__item">
       <a href="{{ project.url }}">
-        <header>
-          <h2 class="project-list__title">{{ project.title }}</h2>
-          <div class="project-list__meta">
-            <time class="project-list__year">{{ project.year }}</time> ·
-            <span class="project-list__client">{{ project.client }}</span>
-          </div>
-        </header>
+
         <figure class="project__screenshot">
-          <figcaption>{{ project.teaser.text }}</figcaption>
+          <figcaption>
+            <header>
+              <h2 class="project-list__title">{{ project.title }}</h2>
+              <div class="project-list__meta">
+                <time class="project-list__year">{{ project.year }}</time> ·
+                <span class="project-list__client">{{ project.client }}</span>
+              </div>
+            </header>
+            <p>{{ project.teaser.text }}</p>
+            <span class="project__link">More about this project</span>
+          </figcaption>
           <img src="{{ project.teaser.image }}" alt="{{ project.teaser.alt }}" />
         </figure>
       </a>

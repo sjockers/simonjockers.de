@@ -17,17 +17,20 @@
 
 .project-list__item {
   @extend .container;
-  padding: 0 30px;
-  margin-top: 0;
-  margin-bottom: 0;
+  padding: 90px 30px 0 30px;
+  margin: 0 auto;
 }
 
 .project-list__title {
+  margin: 0;
+  padding: 0;
+  color: $hilight-color;
   font-family: $text-font-family;
   font-size: $large-font-size;
 }
 
 .project-list__meta {
+  padding-bottom: 15px;
   font-family: $base-font-family;
   font-size: $small-font-size;
   color: $accent-color;
@@ -37,17 +40,61 @@
   margin: 0;
   padding: 0;
 
-  @include media-query($screen-m) {
-    display: block;
-    width: 66%;
-    float: left;
-  }
-
   > img {
     padding-top: 25px;
     background: #dadada;
     border: 1px solid #adadad;
     border-radius: 5px 5px 0 0;
+    box-shadow: 0px 10px 35px -5px rgba(0, 0, 0, 0.75);
+
+    @include media-query($screen-m) {
+      display: block;
+      width: 66.6%;
+      float: left;
+
+      li:nth-child(odd) & {
+        float: right;
+      }
+    }
   }
 
+  > figcaption {
+    color: black;
+    margin: 20px 0;
+    font-family: $text-font-family;
+
+    > p {
+      margin-bottom: 15px;
+    }
+
+    @include media-query($screen-m) {
+      display: block;
+      width: 33.3%;
+      float: right;
+      padding-left: 30px;
+
+      li:nth-child(odd) & {
+        float: left;
+        padding-left: 0;
+        padding-right: 30px;
+      }
+    }
+  }
+}
+
+.project__link {
+  font-weight: bold;
+  color: $hilight-color;
+  font-family: $base-font-family;
+
+  &:before {
+    content: '→';
+    padding-right: .6em;
+  }
+
+  &:hover,
+  &:focus,
+  &:active {
+    color: darken($hilight-color, 10);
+  }
 }
