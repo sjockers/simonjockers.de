@@ -10,4 +10,22 @@ layout: base
 
 </div>
 
+<ul class="project-list">
+{% for figure in page.figures %}
+  <li>
+    <article class="project-list__item">
+      <a href="{{ figure.url }}">
+
+        <figure class="project__screenshot">
+          <figcaption>
+            <p>{{ figure.text }}</p>
+          </figcaption>
+          <img src="{{ figure.image }}" alt="{{ figure.alt }}" />
+        </figure>
+      </a>
+    </article>
+  </li>
+{% endfor %}
+</ul>
+
 {% include footer.html %}
