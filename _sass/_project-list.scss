@@ -42,10 +42,14 @@
 
   > img {
     padding-top: 25px;
-    background: #dadada;
     border: 1px solid #adadad;
     border-radius: 5px 5px 0 0;
     box-shadow: 0px 10px 35px -5px rgba(0, 0, 0, 0.75);
+    background-color: #dadada;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    background-position: 7px 7px;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 53 15"><circle fill="#9B9B9B" stroke="#878787" stroke-miterlimit="10" cx="7.5" cy="7.4" r="6.6"/><circle fill="#9B9B9B" stroke="#878787" stroke-miterlimit="10" cx="26.3" cy="7.4" r="6.6"/><circle fill="#9B9B9B" stroke="#878787" stroke-miterlimit="10" cx="45.2" cy="7.4" r="6.6"/></svg>');
 
     @include media-query($screen-m) {
       display: block;
