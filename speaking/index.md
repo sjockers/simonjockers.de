@@ -3,18 +3,18 @@ layout: listing
 title: Simon Jockers / Speaking
 ---
 
-# Speaking
+## Upcoming
 
-## Upcoming Conference Talks
-
-April 5-10
+October 28-30
 : ^
-  [International Journalism Festival](http://www.journalismfestival.com/)
-  Perugia, Italy
+  [Mozilla Festival](https://mozillafestival.org/)
+  London, UK
 
-April 24-25
+## Past Talks
+
+July 8-9
 : ^
-  [jsunconf.eu](http://jsunconf.eu)
+  [nr-Jahreskonferenz](https://netzwerkrecherche.org/termine/termin/nr-jahreskonferenz-2016/)
   Hamburg, Germany
 
 May 2-4
@@ -22,7 +22,12 @@ May 2-4
   [re:publica](https://re-publica.de/)
   Berlin, Germany
 
-July 8-9
+April 5-10
 : ^
-  [nr-Jahreskonferenz](https://netzwerkrecherche.org/termine/termin/nr-jahreskonferenz-2016/)
-  Hamburg, Germany
+  [International Journalism Festival](http://www.journalismfestival.com/)
+  Perugia, Italy
+
+March 3
+: ^
+  [ddj.ruhr](http://www.meetup.com/DDJ-Taskforce-NRW/)
+  Essen, Germany
