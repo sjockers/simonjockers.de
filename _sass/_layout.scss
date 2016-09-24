@@ -31,12 +31,7 @@ body {
     float: left;
   }
 
-  @include media-query($screen-m) {
-    width: 66%;
-  }
-
   @include media-query($screen-l) {
-    width: 50%;
 
     &.main--featured {
       font-size: $large-font-size;
@@ -45,35 +40,26 @@ body {
 }
 
 .sidebar {
-  padding: $padding;
+  padding: 0 $padding;
   margin: 0;
   display: block;
-  float: left;
-  font-size: $base-font-size;
+  font-size: $small-font-size;
 
   @include media-query($screen-s) {
+    float: right;
     width: 40%;
-    font-size: $small-font-size;
   }
 
   @include media-query($screen-m) {
-    width: 33%;
+    padding-left: 2 * $padding;
   }
 
   @include media-query($screen-l) {
-    width: 50%;
-    padding-left: 220px;
-  }
-}
-
-.sidebar--narrow {
-  @include media-query($screen-l) {
     width: 33%;
-    padding-left: 40px;
   }
 }
 
-.navigation {
+.sidebar__navigation {
   margin-bottom: $padding*2;
 
   ul {
@@ -84,8 +70,8 @@ body {
 
   li {
     display: block;
-    margin: .1em 0 .5em 0;
-    padding: 0;
+    margin: 0;
+    padding: .45em 0 0 0;
   }
 }
 
@@ -112,14 +98,6 @@ body {
       bottom: 0;
       width: 60%;
     }
-
-    @include media-query($screen-m) {
-      width: 66%;
-    }
-
-    @include media-query($screen-l) {
-      width: 50%;
-    }
   }
 
   .footer__container {
@@ -132,16 +110,12 @@ body {
     }
 
     @include media-query($screen-m) {
-      width: 33%;
-      margin-left: 66%;
+      padding-left: 2 * $padding;
     }
 
     @include media-query($screen-l) {
-      width: 50%;
-      margin-left: 50%;
-      padding-left: 220px;
-      padding-top: $padding*3;
-      min-height: 560px;
+      width: 33%;
+      margin-left: 66%;
     }
   }
 }
@@ -171,7 +145,7 @@ body {
     white-space: normal;
   }
 
-  @include media-query($screen-l) {
+  @include media-query($screen-m) {
     white-space: pre-line;
   }
 }
