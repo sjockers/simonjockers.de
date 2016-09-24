@@ -3,22 +3,18 @@ html {
 }
 
 body {
-  border-top: 5px solid $hilight-color;
+  border-top: 3px solid $hilight-color;
   background: white;
 }
 
 .container {
+  position: relative;
   max-width: $screen-l;
-  overflow: hidden;
-
-  @include media-query($screen-s) {
-    margin: $padding*2 auto;
-  }
+  margin: 0 auto;
 }
 
 .main {
-  padding: $padding;
-  margin-top: 0;
+  padding: 0 $padding;
   font-family: $text-font-family;
 
   a {
@@ -27,12 +23,12 @@ body {
 
   @include media-query($screen-s) {
     display: block;
-    width: 60%;
     float: left;
+    width: 60%;
+    padding: $padding;
   }
 
   @include media-query($screen-l) {
-
     &.main--featured {
       font-size: $large-font-size;
     }
