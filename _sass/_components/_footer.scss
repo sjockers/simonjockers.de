@@ -56,8 +56,16 @@
 .footer__navigation {
   margin-top: 3em;
 
-  a {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
     display: inline-block;
+    margin: 0;
+    padding: 0 1.2em .6em 0;
   }
 }
 
