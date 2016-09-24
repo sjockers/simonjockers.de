@@ -1,0 +1,35 @@
+.sidebar {
+  padding: 0 $padding;
+  margin: 0;
+  display: block;
+  font-size: $small-font-size;
+
+  @include media-query($screen-s) {
+    float: right;
+    width: 40%;
+  }
+
+  @include media-query($screen-m) {
+    padding-left: 2 * $padding;
+  }
+
+  @include media-query($screen-l) {
+    width: 33%;
+  }
+}
+
+.sidebar__navigation {
+  margin-bottom: $padding*2;
+
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: block;
+    margin: 0;
+    padding: .45em 0 0 0;
+  }
+}
