@@ -33,3 +33,14 @@
     padding: .45em 0 0 0;
   }
 }
+
+.sidebar__meta {
+  margin: 25px 0 15px 0;
+  color: $accent-color;
+
+  time:after {
+    content: '/';
+    font-size: .9em;
+    padding-left: .5em;
+  }
+}

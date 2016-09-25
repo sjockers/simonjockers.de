@@ -8,34 +8,30 @@
     display: block;
     margin: 0;
     padding: 0;
-    border-bottom: 1px solid desaturate(darken($background-color, 15), 30);
+    border-bottom: 1px solid #dadada;
   }
 
   > li:nth-child(odd) {
-    background: $background-color;
+    background: #f5f5f5;
   }
 }
 
 .project-list__item {
   @extend .container;
-  padding: 90px 30px 0 30px;
-  margin: 0 auto;
+  padding: 0 $padding;
   overflow: hidden;
+
+  @include media-query($screen-m) {
+    padding-top: 3*$padding;
+  }
 }
 
 .project-list__title {
   margin: 0;
-  padding: 0;
-  color: $hilight-color;
+  padding: 0 0 10px 0;
+  color: $text-color;
   font-family: $text-font-family;
-  font-size: $large-font-size;
-}
-
-.project-list__meta {
-  padding-bottom: 15px;
-  font-family: $base-font-family;
-  font-size: $small-font-size;
-  color: $accent-color;
+  font-weight: bold;
 }
 
 .project__screenshot {
@@ -56,7 +52,7 @@
 
     @include media-query($screen-m) {
       display: block;
-      width: 66.6%;
+      width: 60%;
       float: left;
 
       li:nth-child(odd) & {
@@ -66,9 +62,10 @@
   }
 
   > figcaption {
-    color: black;
+    color: $accent-color;
     margin: 20px 0;
     font-family: $text-font-family;
+    font-weight: bold;
 
     > p {
       margin-bottom: 15px;
@@ -76,7 +73,7 @@
 
     @include media-query($screen-m) {
       display: block;
-      width: 33.3%;
+      width: 40%;
       float: right;
       padding-left: 30px;
 
@@ -90,9 +87,9 @@
 }
 
 .project__link {
-  font-weight: bold;
   color: $hilight-color;
   font-family: $base-font-family;
+  font-weight: normal;
 
   &:before {
     content: '→';

@@ -7,8 +7,27 @@ layout: base
   {% include navigation.html %}
 
   <main class="main">
+    <h2 class="main__title">{{ page.title }}</h2>
     {{ content }}
   </main>
+
+  <aside class="sidebar">
+
+    <div class="sidebar__meta">
+      <time>{{ page.year }}</time> {{ page.client }}
+    </div>
+
+    <div class="sidebar__navigation">
+      <ul>
+        {% for link in page.links %}
+          <li>
+            <a href="{{ link.url }}">{{ link.name }}</a>
+          </li>
+        {% endfor %}
+      </ul>
+    </div>
+
+  </aside>
 
 </div>
 
@@ -21,6 +40,7 @@ layout: base
         <figure class="project__screenshot">
           <figcaption>
             <p>{{ figure.text }}</p>
+            <span class="project__link">Visit website</span>
           </figcaption>
           <img src="{{ figure.image }}" alt="{{ figure.alt }}" />
         </figure>

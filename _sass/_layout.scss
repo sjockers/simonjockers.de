@@ -29,6 +29,8 @@ body {
   }
 
   @include media-query($screen-l) {
+    padding-bottom: $padding*2;
+
     &.main--featured {
       font-size: $large-font-size;
     }
@@ -90,4 +92,9 @@ body {
       margin: 0;
     }
   }
+}
+
+.main__title {
+  margin: -15px 0 15px 0;
+  color: $hilight-color;
 }

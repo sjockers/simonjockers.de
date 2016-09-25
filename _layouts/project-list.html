@@ -6,9 +6,11 @@ layout: base
 
   {% include navigation.html %}
 
-  <main class="main">
+  <main class="main main--featured">
+    <h2 class="main__title">Recent work</h2>
     {{ content }}
   </main>
+
 </div>
 
 <ul class="project-list">
@@ -17,16 +19,9 @@ layout: base
   <li>
     <article class="project-list__item">
       <a href="{{ project.url }}">
-
         <figure class="project__screenshot">
           <figcaption>
-            <header>
-              <h2 class="project-list__title">{{ project.title }}</h2>
-              <div class="project-list__meta">
-                <time class="project-list__year">{{ project.year }}</time> ·
-                <span class="project-list__client">{{ project.client }}</span>
-              </div>
-            </header>
+            <h2 class="project-list__title">{{ project.title }}</h2>
             <p>{{ project.teaser.text }}</p>
             <span class="project__link">More about this project</span>
           </figcaption>
