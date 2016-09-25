@@ -3,7 +3,11 @@
   padding: $padding;
 
   @include media-query($screen-s) {
-    top: $padding/2;
+    top: $padding/1.5;
+  }
+
+  @include media-query($screen-l) {
+    padding: $padding*2 $padding;
   }
 
   a {
