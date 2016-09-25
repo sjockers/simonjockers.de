@@ -1,6 +1,6 @@
 ---
 layout: default
-title: Simon Jockers / Curriculum Vitae
+title: Simon Jockers / Credits
 ---
 
 # Credits
