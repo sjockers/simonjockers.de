@@ -30,7 +30,7 @@ figures:
   - image: /assets/images/projects/cop21-figure-2.jpg
     url: https://www.oneworld.nl/wereld/we-moeten-internetvrijheid-koesteren
     alt: Screenshot from OneWorld Magazine
-    text: The code for this project has been reused by OneWorld magazine in Holland to visualize the state of internet censorship across the world.
+    text: The code for this project has been reused by OneWorld magazine in Holland to visualize the state of internet censorship around the world.
 
 ---
 
