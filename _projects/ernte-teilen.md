@@ -6,17 +6,17 @@ year: 2012—2016
 client: personal project
 
 teaser:
-  image: /assets/images/projects/ernte-teilen-teaser.jpg
+  image: /assets/projects/ernte-teilen-teaser.jpg
   alt: Screenshot from ernte-teilen.org showing a map with farms and food hubs
   text: ernte-teilen.org is a web application that maps out community-supported agriculture (CSA) in Germany.
 
 figures:
-  - image: /assets/images/projects/ernte-teilen-figure-1.jpg
+  - image: /assets/projects/ernte-teilen-figure-1.jpg
     url: https://ernte-teilen.org/map/
     alt: Screenshot from ernte-teilen.org showing a map with farms and food hubs
     text: In the past, CSA initiatives in Germany found members mostly through word of mouth. With ernte-teilen.org, farmers and CSA initiatives can put their farms and food hubs on a map with a short profile. Consumers can find food hubs in their neighborhoods.
 
-  - image: /assets/images/projects/ernte-teilen-figure-2.jpg
+  - image: /assets/projects/ernte-teilen-figure-2.jpg
     url: https://ernte-teilen.org/map/
     alt: Screenshot from ernte-teilen.org showing the admin interface for members
     text: All data on ernte-teilen.org is crowd sourced. Farmers and local food initiatives can add and manage map entries using an admin interface.

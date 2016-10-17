@@ -6,18 +6,18 @@ year: 2015
 client: correctiv.org
 
 teaser:
-  image: /assets/images/projects/weisse-woelfe-teaser.jpg
+  image: /assets/projects/weisse-woelfe-teaser.jpg
   alt: Screenshot from weisse-woelfe-comic.de
   text: An award-winning report on right-wing terrorism in Europe, disguised as a graphic novel
 
 
 figures:
-  - image: /assets/images/projects/weisse-woelfe-figure-1.jpg
+  - image: /assets/projects/weisse-woelfe-figure-1.jpg
     url: http://weisse-woelfe-comic.de/
     alt: Screenshot from weisse-woelfe-comic.de
     text: The website for this project presents the core findings of the report using extracts from the graphic novel.
 
-  - image: /assets/images/projects/weisse-woelfe-figure-2.jpg
+  - image: /assets/projects/weisse-woelfe-figure-2.jpg
     url: http://weisse-woelfe-comic.de/lesen/
     alt: Screenshot from weisse-woelfe-comic.de
     text: At weisse-woelfe-comic.de/lesen you can read the full book on your desktop, tablet or mobile.

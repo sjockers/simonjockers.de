@@ -6,17 +6,17 @@ year: 2016
 client: personal project
 
 teaser:
-  image: /assets/images/projects/cyclehack-teaser.jpg
+  image: /assets/projects/cyclehack-teaser.jpg
   alt: Screenshot of the CycleHack Berlin homepage
   text: A hackathon around cycling and bycicle advocacy in Berlin, organized for the first time in June 2016.
 
 figures:
-  - image: /assets/images/projects/cyclehack-figure-1.jpg
+  - image: /assets/projects/cyclehack-figure-1.jpg
     url: http://cyclehackberlin.de/
     alt: Screenshot of the CycleHack Berlin homepage
     text: A CycleHack is a hackathon that brings together bike nerds, makers, designers, engineers, activists, city planners and many others to come up with ideas that tackle the barriers to cycling.
 
-  - image: /assets/images/projects/cyclehack-figure-2.jpg
+  - image: /assets/projects/cyclehack-figure-2.jpg
     url: http://cyclehackberlin.de/mitmachen/
     alt: Screenshot of the CycleHack Berlin programme page
     text: We ran our first Berlin hackathon in June 2016 at FabLab Berlin. For 48 hours participants prototyped ideas around cycling data, hardware, software, and physical products.

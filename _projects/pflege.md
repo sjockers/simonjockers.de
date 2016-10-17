@@ -6,17 +6,17 @@ year: 2016
 client: for correctiv.org
 
 teaser:
-  image: /assets/images/projects/pflege-teaser.jpg
+  image: /assets/projects/pflege-teaser.jpg
   alt: Screenshot from the Wegweiser Pflege application, showing the profile page for a nursing home
   text: A web application that makes data from the official inspection reports of 13,000 German nursing homes available to the public.
 
 figures:
-  - image: /assets/images/projects/pflege-teaser.jpg
+  - image: /assets/projects/pflege-teaser.jpg
     url: https://correctiv.org/recherchen/pflege/wegweiser/pflegeheim/10963-caritas-seniorenzentrum-st-johannes-berlin/
     alt: Screenshot from the Wegweiser Pflege application, showing the profile page for a nursing home
     text: This web application generates a profile page for every single nursing home in Germany. The profile page lists the important data points, puts them into context, and compares the home to other nursing homes nearby.
 
-  - image: /assets/images/projects/pflege-figure-1.jpg
+  - image: /assets/projects/pflege-figure-1.jpg
     url: https://correctiv.org/recherchen/pflege/wegweiser/
     alt: Screenshot from ernte-teilen.org showing the admin interface for members
     text: Users can search for a nursing home using their address. The goal is to help people choose the right nursing home by giving them access to relevant data from inspection reports and to teach them how to make the most informed decision about this important topic.
