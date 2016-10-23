@@ -1,4 +1,4 @@
-$base-path: '/assets/fonts/';
+$base-path: '/assets/';
 
 @mixin webfont-src($font-family, $file-name) {
   src: url('#{$base-path}#{$font-family}/EOT/#{$file-name}.eot') format('embedded-opentype'),
