@@ -10,11 +10,6 @@
     padding: $padding*2 $padding;
   }
 
-  a {
-    font-size: $small-font-size;
-    padding: 0.1em 0;
-  }
-
   ul {
     margin: 0;
     padding: 0;
@@ -25,6 +20,9 @@
   li {
     display: inline-block;
     margin: 0;
+    font-size: $small-font-size;
+    padding: 0.1em 0;
+    cursor: default;
 
     &:before {
       content: '/';
@@ -34,22 +32,22 @@
   }
 }
 
+.navigation--home .navigation__link--home,
+.navigation--projects .navigation__link--projects,
+.navigation--speaking .navigation__link--speaking {
+  color: $text-color;
+
+  &:hover {
+    border-color: $text-color;
+  }
+}
+
 .navigation__title {
   position: relative;
   display: inline-block;
   padding: 0;
   margin: 0;
   font-size: $small-font-size;
-
-  a {
-    color: $text-color;
-  }
-
-  a:hover,
-  a:active,
-  a:focus {
-    color: darken($hilight-color, 10%);
-  }
 
   &:before {
     content: '→';

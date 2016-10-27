@@ -1,6 +1,6 @@
-<nav class="navigation">
+<nav class="navigation navigation--{{ include.active }}">
   <h1 class="navigation__title">
-    <a href="/">
+    <a class="navigation__link--home" href="/">
       <span class="navigation__initials">SJ</span>
       <span class="navigation__full-name">Simon Jockers</span>
     </a>
@@ -8,10 +8,10 @@
 
   <ul>
     <li>
-      <a href="/projects/">Projects</a>
+      <a class="navigation__link--projects" href="/projects/">Projects</a>
     </li>
     <li>
-      <a href="/speaking/">Speaking</a>
+      <a class="navigation__link--speaking" href="/speaking/">Speaking</a>
     </li>
   </ul>
 </nav>
