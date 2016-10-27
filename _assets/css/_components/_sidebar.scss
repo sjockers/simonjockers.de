@@ -28,9 +28,21 @@
   }
 
   li {
+    position: relative;
     display: block;
     margin: 0;
     padding: .45em 0 0 0;
+  }
+
+  a {
+    margin-left: 1.2em;
+  }
+
+  a:before {
+    content: '→';
+    position: absolute;
+    left: 0;
+    color: $hilight-color;
   }
 }
 
