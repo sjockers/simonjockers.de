@@ -1,8 +1,8 @@
 $base-path: '/assets/';
 
 @mixin webfont-src($font-family, $file-name) {
-  src: url('#{$base-path}#{$font-family}/woff/#{$file-name}.woff') format('woff2'),
-       url('#{$base-path}#{$font-family}/woff/#{$file-name}.woff2') format('woff');
+  src: url('#{$base-path}#{$font-family}/#{$file-name}.woff') format('woff2'),
+       url('#{$base-path}#{$font-family}/#{$file-name}.woff2') format('woff');
 }
 
 @font-face {
@@ -10,7 +10,15 @@ $base-path: '/assets/';
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
-  @include webfont-src(fira, FiraSans-Light);
+  @include webfont-src(fira, firasans-light-webfont);
+}
+
+@font-face {
+  font-family: 'fira-sans';
+  font-style: italic;
+  font-weight: normal;
+  font-stretch: normal;
+  @include webfont-src(fira, firasans-lightitalic-webfont);
 }
 
 @font-face {
@@ -18,7 +26,7 @@ $base-path: '/assets/';
   font-style: normal;
   font-weight: bold;
   font-stretch: normal;
-  @include webfont-src(fira, FiraSans-Medium);
+  @include webfont-src(fira, firasans-medium-webfont);
 }
 
 @font-face {
@@ -26,13 +34,5 @@ $base-path: '/assets/';
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
-  @include webfont-src(fira, FiraMono-Regular);
-}
-
-@font-face {
-  font-family: 'fira-sans';
-  font-style: normal;
-  font-style: italic;
-  font-stretch: normal;
-  @include webfont-src(fira, FiraSans-Medium);
+  @include webfont-src(fira, firamono-regular-webfont);
 }
