@@ -31,7 +31,7 @@ assets:
 
   assets:
     - ["*.eot", "*.ttf", "*.otf", "*.woff", "*.woff2"]
-    - ["*.png", "*.jpg", "*.svg"]
+    - ["*.png", "*.jpg", "*.svg", "*.ico"]
     - ["main.css"]
 
   autoprefixer:
