@@ -5,9 +5,9 @@ title: Simon Jockers / Credits
 
 # Credits
 
-This website is generated using [Jekyll](https://github.com/jekyll/jekyll) and hosted on [Uberspace](https://uberspace.de/). The typefaces used are [Source Serif Pro](https://github.com/adobe-fonts/source-serif-pro) by Frank Grießhammer and [Source Code Pro](https://github.com/adobe-fonts/source-code-pro) by Paul D. Hunt. The portrait photo was taken by [Ivo Mayr](http://ivomayr.com/).
+This website is generated using [Jekyll](https://github.com/jekyll/jekyll) and hosted on [Uberspace](https://uberspace.de/). The typefaces used are [Fira Sans and Fira Mono](https://github.com/mozilla/Fira) by Ralph du Carrois and Erik Spiekermann. The portrait photo was taken by [Ivo Mayr](http://ivomayr.com/).
 
-# Impressum (Legal Information)
+# Impressum / legal information
 
 Verantwortlich für den Inhalt:<br/>
 Simon Jockers<br/>

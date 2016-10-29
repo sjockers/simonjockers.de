@@ -64,11 +64,10 @@
   > figcaption {
     color: $accent-color;
     margin: 20px 0;
-    font-family: $text-font-family;
-    font-weight: bold;
 
     > p {
       margin-bottom: 15px;
+      font-family: $text-font-family;
     }
 
     @include media-query($screen-m) {
@@ -88,7 +87,6 @@
 
 .project__link {
   color: $hilight-color;
-  font-family: $base-font-family;
   font-weight: normal;
 
   &:before {
@@ -100,5 +98,6 @@
   &:focus,
   &:active {
     color: darken($hilight-color, 10);
+    border-bottom: 2px solid darken($hilight-color, 10);
   }
 }

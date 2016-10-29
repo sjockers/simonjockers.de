@@ -1,32 +1,38 @@
 $base-path: '/assets/';
 
 @mixin webfont-src($font-family, $file-name) {
-  src: url('#{$base-path}#{$font-family}/EOT/#{$file-name}.eot') format('embedded-opentype'),
-       url('#{$base-path}#{$font-family}/WOFF/OTF/#{$file-name}.otf.woff') format('woff'),
-       url('#{$base-path}#{$font-family}/OTF/#{$file-name}.otf') format('opentype'),
-       url('#{$base-path}#{$font-family}/TTF/#{$file-name}.ttf') format('truetype');
+  src: url('#{$base-path}#{$font-family}/woff/#{$file-name}.woff') format('woff2'),
+       url('#{$base-path}#{$font-family}/woff/#{$file-name}.woff2') format('woff');
 }
 
 @font-face {
-  font-family: 'Source Serif Pro';
+  font-family: 'fira-sans';
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
-  @include webfont-src(source-serif-pro, SourceSerifPro-Light);
+  @include webfont-src(fira, FiraSans-Light);
 }
 
 @font-face {
-  font-family: 'Source Serif Pro';
+  font-family: 'fira-sans';
   font-style: normal;
   font-weight: bold;
   font-stretch: normal;
-  @include webfont-src(source-serif-pro, SourceSerifPro-Regular);
+  @include webfont-src(fira, FiraSans-Medium);
 }
 
 @font-face {
-  font-family: 'Source Code Pro';
+  font-family: 'fira-mono';
   font-style: normal;
   font-weight: normal;
   font-stretch: normal;
-  @include webfont-src(source-code-pro, SourceCodePro-Medium);
+  @include webfont-src(fira, FiraMono-Regular);
+}
+
+@font-face {
+  font-family: 'fira-sans';
+  font-style: normal;
+  font-style: italic;
+  font-stretch: normal;
+  @include webfont-src(fira, FiraSans-Medium);
 }
