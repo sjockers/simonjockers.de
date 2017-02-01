@@ -32,10 +32,16 @@
 
 .footer__contact {
   padding: 50px 0;
+
+
 }
 
 .footer__navigation {
-  margin-top: 3em;
+  padding: 3em 30px;
+
+  .footer--portrait & {
+    padding: 3em 0 0 0;
+  }
 
   ul {
     margin: 0;
@@ -46,7 +52,7 @@
   li {
     display: inline-block;
     margin: 0;
-    padding: 0 1.2em .6em 0;
+    padding: 0 1.2em 0 0;
   }
 }
 
