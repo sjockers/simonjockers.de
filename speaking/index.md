@@ -3,16 +3,12 @@ layout: listing
 title: Simon Jockers / Speaking
 ---
 
-## Upcoming
+## 2016
 
 October 28-30
 : ^
-  [Mozilla Festival](https://mozillafestival.org/spaces-and-sessions#journalism)
+  [Mozilla Festival](https://app.mozillafestival.org/#_session-532)
   London, UK
-
-  How do we design engaging data-driven news apps? Join [Lam Thuy Vo](https://twitter.com/lamthuyvo) and me at Mozilla Festival to learn and discuss techniques in this workshop.
-
-## Past Talks
 
 July 8-9
 : ^
