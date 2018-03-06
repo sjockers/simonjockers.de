@@ -3,7 +3,25 @@ layout: listing
 title: Simon Jockers / Speaking
 ---
 
+## Upcoming
+
+May 2-4
+: ^
+  [re:publica](https://18.re-publica.com/en)
+  Berlin
+
+June 29-30
+: ^
+  [nr-Jahreskonferenz](https://netzwerkrecherche.org/termine/konferenzen/jahreskonferenzen/nr-jahreskonferenz-2018/)
+  Hamburg
+
+
 ## 2017
+
+September 8
+: ^
+  [Campfire Festival](https://campfirefestival2017.sched.com/event/C0cW/was-ist-das-fur-1-datenjournalismus-digitale-formate-jenseits-des-klassischen-artikels)
+  Dortmund
 
 August 3-4
 : ^
