@@ -8,4 +8,5 @@ gem 'guard-jekyll-plus'
 gem 'guard-livereload'
 gem 'jekyll-assets'
 gem 'autoprefixer-rails'
+gem 'rb-readline'
 
