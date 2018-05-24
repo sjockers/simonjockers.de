@@ -2,7 +2,7 @@
 
 title: Ernte teilen!
 order: 5
-year: 2012—2016
+year: 2012, ongoing
 client: personal project
 
 teaser:
