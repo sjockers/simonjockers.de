@@ -19,8 +19,9 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - Guardfile
+  - vendor
 
-gems:
+plugins:
   - jekyll-assets
 
 assets:
