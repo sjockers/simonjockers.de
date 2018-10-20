@@ -5,6 +5,12 @@
   width: 100%;
   background: $background-color;
   font-size: $small-font-size;
+
+  a:hover,
+  a:active,
+  a:focus {
+    border: none;
+  }
 }
 
 .footer--portrait {
@@ -16,7 +22,7 @@
       position: absolute;
       display: block;
       background-color: darken($hilight-color, 10);
-      background-image: url('/assets/portrait.jpg');
+      background-image: url("/assets/portrait.jpg");
       background-position: right center;
       background-size: cover;
       top: 0;
@@ -32,8 +38,6 @@
 
 .footer__contact {
   padding: 50px 0;
-
-
 }
 
 .footer__navigation {

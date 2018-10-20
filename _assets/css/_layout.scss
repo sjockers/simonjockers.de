@@ -24,12 +24,12 @@ body {
   @include media-query($screen-s) {
     display: block;
     float: left;
-    width: 60%;
+    width: 62%;
     padding: $padding;
   }
 
   @include media-query($screen-l) {
-    padding-bottom: $padding*2;
+    padding-bottom: $padding * 2;
 
     &.main--featured {
       font-size: $large-font-size;

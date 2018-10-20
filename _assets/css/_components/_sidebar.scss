@@ -6,7 +6,7 @@
 
   @include media-query($screen-s) {
     float: right;
-    width: 40%;
+    width: 38%;
   }
 
   @include media-query($screen-m) {
@@ -19,7 +19,7 @@
 }
 
 .sidebar__navigation {
-  margin-bottom: $padding*2;
+  margin-bottom: $padding * 2;
 
   ul {
     margin: 0;
@@ -31,7 +31,7 @@
     position: relative;
     display: block;
     margin: 0;
-    padding: .45em 0 0 0;
+    padding: 0.45em 0 0 0;
   }
 
   a {
@@ -39,7 +39,7 @@
   }
 
   a:before {
-    content: '→';
+    content: "→";
     position: absolute;
     left: 0;
     color: $hilight-color;
@@ -51,8 +51,8 @@
   color: $accent-color;
 
   time:after {
-    content: '/';
-    font-size: .9em;
-    padding-left: .5em;
+    content: "/";
+    font-size: 0.9em;
+    padding-left: 0.5em;
   }
 }
