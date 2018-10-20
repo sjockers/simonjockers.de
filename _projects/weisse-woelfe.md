@@ -1,7 +1,6 @@
 ---
-
 title: Weisse Wölfe
-order: 4
+order: 6
 year: 2015
 client: correctiv.org
 
@@ -9,7 +8,6 @@ teaser:
   image: /assets/projects/weisse-woelfe-teaser.jpg
   alt: Screenshot from weisse-woelfe-comic.de
   text: An award-winning report on right-wing terrorism in Europe, disguised as a graphic novel
-
 
 figures:
   - image: /assets/projects/weisse-woelfe-figure-1.jpg
@@ -27,7 +25,6 @@ links:
     url: http://weisse-woelfe-comic.de/
   - name: Read the book online
     url: http://weisse-woelfe-comic.de/lesen/
-
 ---
 
 “Weisse Wölfe” is a report on right-wing terrorism in Europe, disguised as a graphic novel. It was written by David Schraven and illustrated by Jan Feindt. I designed and built the website for the project which presents the core findings of the report using extracts from the graphic novel. We also made the full book accessible online.

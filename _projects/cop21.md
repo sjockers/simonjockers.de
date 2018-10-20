@@ -1,7 +1,6 @@
 ---
-
 title: Climate Change Factions
-order: 3
+order: 4
 year: 2015
 client: for correctiv.org
 
@@ -31,9 +30,8 @@ figures:
     url: https://www.oneworld.nl/wereld/we-moeten-internetvrijheid-koesteren
     alt: Screenshot from OneWorld Magazine
     text: The code for this project has been reused by OneWorld magazine in Holland to visualize the state of internet censorship around the world.
-
 ---
 
-This is a recent example of the data viz work we do at CORRECTIV and one of the rare pieces we have published in English. This interactive graphic maps nations on a scatter plot according to their GDP, population and annual CO2 emissions. It was part CORRECTIV’s reporting on the [2015 UN climate change conference](http://www.parisprotokoll.de/).
+This is an example of the data viz work I did for CORRECTIV and one of the rare pieces we published in English. This interactive graphic maps nations on a scatter plot according to their GDP, population and annual CO2 emissions. It was part CORRECTIV’s reporting on the [2015 UN climate change conference](http://www.parisprotokoll.de/).
 
-The data research for the piece was done by my coworkers Stefan Wehrmeyer and Annika Joeres. I designed it and wrote most of the code. Additional web development was done by Christopher Möller and Moritz Klack.
+The data research for the piece was done by Stefan Wehrmeyer and Annika Joeres. I designed it and wrote most of the code. Additional web development was done by Christopher Möller and Moritz Klack.
