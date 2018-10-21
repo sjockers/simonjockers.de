@@ -1,4 +1,4 @@
-.project-list {
+.projects__listing {
   width: 100%;
   overflow: hidden;
   margin: 0;
@@ -16,17 +16,17 @@
   }
 }
 
-.project-list__item {
+.projects__item {
   @extend .container;
   padding: 0 $padding;
   overflow: hidden;
 
   @include media-query($screen-m) {
-    padding-top: 3*$padding;
+    padding-top: 3 * $padding;
   }
 }
 
-.project-list__title {
+.projects__title {
   margin: 0;
   padding: 0 0 10px 0;
   color: $text-color;
@@ -34,7 +34,29 @@
   font-weight: bold;
 }
 
-.project__screenshot {
+.projects__more {
+  background: $background-color;
+  padding: $padding;
+  text-align: center;
+
+  a {
+    display: inline-block;
+    padding: $padding/3 $padding;
+    background: $hilight-color;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+  }
+
+  a:hover,
+  a:focus,
+  a:active {
+    background: darken($hilight-color, 10);
+    border: none;
+  }
+}
+
+.projects__screenshot {
   margin: 0;
   padding: 0;
 
@@ -85,13 +107,13 @@
   }
 }
 
-.project__link {
+.projects__link {
   color: $hilight-color;
   font-weight: normal;
 
   &:before {
-    content: '→';
-    padding-right: .6em;
+    content: "→";
+    padding-right: 0.6em;
   }
 
   &:hover,

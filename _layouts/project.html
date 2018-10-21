@@ -31,16 +31,16 @@ layout: base
 
 </div>
 
-<ul class="project-list">
+<ul class="projects__listing">
 {% for figure in page.figures %}
   <li>
-    <article class="project-list__item">
+    <article class="projects__item">
       <a href="{{ figure.url }}">
 
-        <figure class="project__screenshot">
+        <figure class="projects__screenshot">
           <figcaption>
             <p>{{ figure.text }}</p>
-            <span class="project__link">Visit website</span>
+            <span class="projects__link">Visit website</span>
           </figcaption>
           <img src="{{ figure.image }}" alt="{{ figure.alt }}" />
         </figure>

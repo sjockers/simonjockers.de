@@ -5,23 +5,22 @@
 $base-font-family: "fira-mono", monospace;
 $text-font-family: "fira-sans", Georgia, serif;
 
-$base-font-size:   20px;
-$small-font-size:  16px;
-$large-font-size:  24px;
+$base-font-size: 20px;
+$small-font-size: 16px;
+$large-font-size: 24px;
 $base-line-height: 1.6;
 
-$padding:          30px;
+$padding: 30px;
 
-$text-color:       #040404;
-$accent-color:     #676767;
-$hilight-color:    #1f9f76;
+$text-color: #040404;
+$accent-color: #676767;
+$hilight-color: #1f9f76;
 $background-color: lighten($hilight-color, 50);
 
-$screen-s:        720px;
-$screen-m:        960px;
-$screen-l:        1140px;
-$screen-xl:       1920px;
-
+$screen-s: 720px;
+$screen-m: 960px;
+$screen-l: 1140px;
+$screen-xl: 1920px;
 
 /* --- Simple, mobile-first media queries: ---
 
@@ -41,16 +40,13 @@ Usage:
   }
 }
 
-
 /* --- Import partials/components: --- */
 
-@import
-  "fonts",
-  "base",
-  "layout",
-  "project-list",
-  "syntax-highlighting",
-  "_components/navigation",
-  "_components/sidebar",
-  "_components/footer"
-;
+@import "fonts";
+@import "base";
+@import "layout";
+@import "project-list";
+@import "syntax-highlighting";
+@import "_components/navigation";
+@import "_components/sidebar";
+@import "_components/footer";

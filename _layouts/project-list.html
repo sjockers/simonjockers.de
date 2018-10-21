@@ -13,17 +13,18 @@ layout: base
 
 </div>
 
-<ul class="project-list">
+<div class="projects">
+<ul class="projects__listing">
 {% assign projects = site.projects | sort: 'order' %}
-{% for project in projects %}
+{% for project in projects limit: 3 %}
   <li>
-    <article class="project-list__item">
+    <article class="projects__item">
       <a href="{{ project.url }}">
-        <figure class="project__screenshot">
+        <figure class="projects__screenshot">
           <figcaption>
-            <h2 class="project-list__title">{{ project.title }}</h2>
+            <h2 class="projects__title">{{ project.title }}</h2>
             <p>{{ project.teaser.text }}</p>
-            <span class="project__link">More about this project</span>
+            <span class="projects__link">More about this project</span>
           </figcaption>
           <img src="{{ project.teaser.image }}" alt="{{ project.teaser.alt }}" />
         </figure>
@@ -32,5 +33,10 @@ layout: base
   </li>
 {% endfor %}
 </ul>
+<div class="projects__more">
+  <a href="">Show older projects</href>
+</div>
+</div>
+
 
 {% include footer.html %}
