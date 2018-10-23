@@ -35,16 +35,24 @@ layout: base
 {% for figure in page.figures %}
   <li>
     <article class="projects__item">
-      <a href="{{ figure.url }}">
-
+      {% if figure.url%}
+        <a href="{{ figure.url }}">
+          <figure class="projects__screenshot">
+            <figcaption>
+              <p>{{ figure.text }}</p>
+              <span class="projects__link">Visit website</span>
+            </figcaption>
+            <img src="{{ figure.image }}" alt="{{ figure.alt }}" />
+          </figure>
+        </a>
+      {% else %}
         <figure class="projects__screenshot">
           <figcaption>
             <p>{{ figure.text }}</p>
-            <span class="projects__link">Visit website</span>
           </figcaption>
           <img src="{{ figure.image }}" alt="{{ figure.alt }}" />
         </figure>
-      </a>
+      {% endif %}
     </article>
   </li>
 {% endfor %}
