@@ -7,7 +7,7 @@ layout: base
   {% include navigation.html active = 'projects' %}
 
   <main class="main main--featured">
-    <h2 class="main__title">Recent work</h2>
+    <h2 class="main__title">{{ page.title }}</h2>
     {{ content }}
   </main>
 
@@ -16,13 +16,13 @@ layout: base
 <div class="projects">
 <ul class="projects__listing">
 {% assign projects = site.projects | sort: 'order' %}
-{% for project in projects limit: 3 %}
+{% for project in projects limit: page.limit offset: page.offset %}
   <li>
     <article class="projects__item">
       <a href="{{ project.url }}">
         <figure class="projects__screenshot">
           <figcaption>
-            <h2 class="projects__title">{{ project.title }}</h2>
+            <h2 class="projects__title" id={{ forloop.index }}>{{ project.title }}</h2>
             <p>{{ project.teaser.text }}</p>
             <span class="projects__link">More about this project</span>
           </figcaption>
@@ -33,9 +33,13 @@ layout: base
   </li>
 {% endfor %}
 </ul>
-<div class="projects__more">
-  <a href="">Show older projects</href>
-</div>
+
+{% if page.limit %}
+  <div class="projects__more">
+    <a href="/projects/archive/">Show older projects</href>
+  </div>
+{% endif %}
+
 </div>
 
 
