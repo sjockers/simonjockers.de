@@ -9,12 +9,13 @@ Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der V
 
 ## Verantwortlicher
 
-Simon Jockers<br/>
-Ueckermünder Str. 6<br/>
-10439 Berlin
+Simon Jockers\\
+Carl-von-Ossietzky-Str. 14\\
+16225 Eberswalde
 
-+49 (0)30 - 5557 802 23<br/>
-hello (ät) simonjockers.de<br/>
+Telefon: +49 (0) 3334 - 49 17 820\\
+E-Mail: hello(ät)simonjockers.de
+
 [Impressum](http://simonjockers.de/impressum)
 
 ## Arten der verarbeiteten Daten:

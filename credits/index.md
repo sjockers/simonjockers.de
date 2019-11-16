@@ -11,10 +11,9 @@ The portrait photo was taken by [Ivo Mayr](http://ivomayr.com/).
 
 # Impressum / legal information
 
-Verantwortlich für den Inhalt:\\
 Simon Jockers\\
-Oranienstraße 19a\\
-10999 Berlin
+Carl-von-Ossietzky-Str. 14\\
+16225 Eberswalde
 
 [hello@simonjockers.de](mailto:hello@simonjockers.de)\\
-+49 (0)175 59 25 122
+Telefon: +49 (0) 3334 - 49 17 820\\
