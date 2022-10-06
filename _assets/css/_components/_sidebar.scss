@@ -1,5 +1,5 @@
 .sidebar {
-  padding: 0 $padding;
+  padding: .5em $padding;
   margin: 0;
   display: block;
   font-size: $small-font-size;
@@ -35,16 +35,32 @@
   }
 
   a {
-    padding-left: 1.2em;
+    display: inline;
+    padding-left: 25px;
+    background-repeat: no-repeat;
   }
 
-  a:before {
-    content: "→";
+  svg {
+    fill: $hilight-color;
+    width: 18px;
+    height: 18px;
     position: absolute;
     left: 0;
+    top: 9px;
+  }
+
+  &:not(.sidebar__navigation--with-icons) a:before {
+    content: "→";
+    position: absolute;
+    left: 2px;
+    top: 6px;
     color: $hilight-color;
+    display: block;
+    width: 20px;
+    height: 20px;
   }
 }
+
 
 .sidebar__meta {
   margin: 25px 0 15px 0;
