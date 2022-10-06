@@ -3,6 +3,8 @@ layout: home
 title: Simon Jockers
 ---
 
-Hi, I’m Simon. I design and build web applications with a focus on civic tech and data journalism projects. More recently, I have been working on making [official statistics](http://datengui.de/) more accessible to normal people, have co-organized a series of [events](https://www.meetup.com/Hacks-Hackers-Berlin/) on journalism and technology, and have occasionally spoken at [conferences](/speaking/).
+Hi, I’m Simon. I design and build web applications with a focus on **civic tech** and **data journalism** projects. 
 
-Outside of my day-to-day work, I co-organize [CycleHack Berlin](http://cyclehackberlin.de/), a hackathon around bikes and bicycle advocacy, and run [ernte-teilen.org](https://ernte-teilen.org/), a website that maps out community-supported agriculture in Germany.
+For the past few years, my day job has been [Datawrapper](https:/datawrapper.de), where we work on tools that let you make your own [charts and maps](https://www.datawrapper.de/solutions/media). 
+
+Outside of my day-to-day, I run [Datenguide](http://datengui.de/), an initiative that aims to make German official statistics more accessible, and [Ernte&nbsp;teilen](https://ernte-teilen.org/), a website that maps community-supported agriculture in German-speaking countries. I also co-organize [Hacks/Hackers Berlin](https://www.meetup.com/Hacks-Hackers-Berlin/), a series of events on journalism and technology.
