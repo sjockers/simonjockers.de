@@ -1,46 +1,45 @@
 ---
 layout: base
 ---
+<div class="content">
+    <div class="container">
 
-<div class="container">
+    {% include navigation.html active = 'projects' %}
 
-  {% include navigation.html active = 'projects' %}
+    <main class="main main--featured">
+        <h2 class="main__title">{{ page.title }}</h2>
+        {{ content }}
+    </main>
 
-  <main class="main main--featured">
-    <h2 class="main__title">{{ page.title }}</h2>
-    {{ content }}
-  </main>
+    </div>
 
+    <div class="projects">
+    <ul class="projects__listing">
+    {% assign projects = site.projects | sort: 'order' %}
+    {% for project in projects limit: page.limit offset: page.offset %}
+    <li>
+        <article class="projects__item">
+        <a href="{{ project.url }}">
+            <figure class="projects__screenshot">
+            <figcaption>
+                <h2 class="projects__title" id={{ forloop.index }}>{{ project.title }}</h2>
+                <p>{{ project.teaser.text }}</p>
+                <span class="projects__link">More about this project</span>
+            </figcaption>
+            <img src="{{ project.teaser.image }}" alt="{{ project.teaser.alt }}" />
+            </figure>
+        </a>
+        </article>
+    </li>
+    {% endfor %}
+    </ul>
+
+    {% if page.limit %}
+    <div class="projects__more">
+        <a href="/projects/archive/">Show older projects</href>
+    </div>
+    {% endif %}
+
+    </div>
+    {% include footer.html %}
 </div>
-
-<div class="projects">
-<ul class="projects__listing">
-{% assign projects = site.projects | sort: 'order' %}
-{% for project in projects limit: page.limit offset: page.offset %}
-  <li>
-    <article class="projects__item">
-      <a href="{{ project.url }}">
-        <figure class="projects__screenshot">
-          <figcaption>
-            <h2 class="projects__title" id={{ forloop.index }}>{{ project.title }}</h2>
-            <p>{{ project.teaser.text }}</p>
-            <span class="projects__link">More about this project</span>
-          </figcaption>
-          <img src="{{ project.teaser.image }}" alt="{{ project.teaser.alt }}" />
-        </figure>
-      </a>
-    </article>
-  </li>
-{% endfor %}
-</ul>
-
-{% if page.limit %}
-  <div class="projects__more">
-    <a href="/projects/archive/">Show older projects</href>
-  </div>
-{% endif %}
-
-</div>
-
-
-{% include footer.html %}

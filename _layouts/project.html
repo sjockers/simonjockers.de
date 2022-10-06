@@ -2,60 +2,62 @@
 layout: base
 ---
 
-<div class="container">
+<div class="content">
+    <div class="container">
 
-  {% include navigation.html active='projects' %}
+    {% include navigation.html active='projects' %}
 
-  <main class="main">
-    <h2 class="main__title">{{ page.title }}</h2>
-    {{ content }}
-  </main>
+    <main class="main">
+      <h2 class="main__title">{{ page.title }}</h2>
+      {{ content }}
+    </main>
 
-  <aside class="sidebar">
+    <aside class="sidebar">
 
-    <div class="sidebar__meta">
-      <time>{{ page.year }}</time> {{ page.client }}
-    </div>
+      <div class="sidebar__meta">
+        <time>{{ page.year }}</time> {{ page.client }}
+      </div>
 
-    <div class="sidebar__navigation">
-      <ul>
-        {% for link in page.links %}
-          <li>
-            <a href="{{ link.url }}">{{ link.name }}</a>
-          </li>
-        {% endfor %}
-      </ul>
-    </div>
+      <div class="sidebar__navigation">
+        <ul>
+          {% for link in page.links %}
+            <li>
+              <a href="{{ link.url }}">{{ link.name }}</a>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
 
-  </aside>
+    </aside>
 
-</div>
+  </div>
 
-<ul class="projects__listing">
-{% for figure in page.figures %}
-  <li>
-    <article class="projects__item">
-      {% if figure.url%}
-        <a href="{{ figure.url }}">
+  <ul class="projects__listing">
+  {% for figure in page.figures %}
+    <li>
+      <article class="projects__item">
+        {% if figure.url%}
+          <a href="{{ figure.url }}">
+            <figure class="projects__screenshot">
+              <figcaption>
+                <p>{{ figure.text }}</p>
+                <span class="projects__link">Visit website</span>
+              </figcaption>
+              <img src="{{ figure.image }}" alt="{{ figure.alt }}" />
+            </figure>
+          </a>
+        {% else %}
           <figure class="projects__screenshot">
             <figcaption>
               <p>{{ figure.text }}</p>
-              <span class="projects__link">Visit website</span>
             </figcaption>
             <img src="{{ figure.image }}" alt="{{ figure.alt }}" />
           </figure>
-        </a>
-      {% else %}
-        <figure class="projects__screenshot">
-          <figcaption>
-            <p>{{ figure.text }}</p>
-          </figcaption>
-          <img src="{{ figure.image }}" alt="{{ figure.alt }}" />
-        </figure>
-      {% endif %}
-    </article>
-  </li>
-{% endfor %}
-</ul>
+        {% endif %}
+      </article>
+    </li>
+  {% endfor %}
+  </ul>
+</div>
 
 {% include footer.html %}

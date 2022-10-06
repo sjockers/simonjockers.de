@@ -2,18 +2,19 @@
 layout: base
 ---
 
-<div class="container">
+<div class="content">
+  <div class="container">
+    {% include navigation.html active = 'home' %}
 
-  {% include navigation.html active = 'home' %}
+    <main class="main main--featured">
+      {{ content }}
+    </main>
 
-  <main class="main main--featured">
-    {{ content }}
-  </main>
-
-  <aside class="sidebar">
-    {% include navigation-sidebar.html %}
-  </aside>
-
+    <aside class="sidebar">
+      {% include navigation-sidebar.html %}
+    </aside>
+  </div>
 </div>
 
 {% include footer-with-portrait.html %}
+
