@@ -32,6 +32,6 @@ links:
     url: https://github.com/teikei/
 ---
 
-[ernte-teilen.org](https://ernte-teilen.org/) is a web application that maps out [community-supported agriculture](https://en.wikipedia.org/wiki/Community-supported_agriculture) in Germany. It is a project I have co-founded and led for several years. I am in charge of product design and have done most of the frontend development. Most of the backend development was done by Christian Rijke. The visual design recently received an overhaul by Maria Dolecek.
+[ernte-teilen.org](https://ernte-teilen.org/) is a web application that maps out [community-supported agriculture](https://en.wikipedia.org/wiki/Community-supported_agriculture) in Germany. It is a project I have co-founded and led for several years. I am in charge of product design and have done most of the frontend development. Most of the backend development was done by [Christian Rijke](https://christianrijke.de/). In 2019, the visual design received an overhaul by [Maria Dolecek](https://de.linkedin.com/in/maria-dolecek-126970ba).
 
-The project was started with a [micro grant](http://stadtlandcode.de/) from Open Knowledge Germany and has received funding through their [Prototype Fund](https://prototypefund.de/).
+The project was started with a [micro grant](http://stadtlandcode.de/) from Open Knowledge Germany and has received funding from the [Prototype Fund](https://prototypefund.de/).
