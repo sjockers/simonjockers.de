@@ -1,14 +1,30 @@
 ---
 layout: listing
-title: Simon Jockers / Speaking
+title: Simon Jockers / workshops & talks
 ---
 
-## 2018
 
-Oct 25
+## 2020
+Dec 30
 : ^
-[OpenNews Unconference @ Mozilla Festival](https://opennews.org/what/conferences/mozfest/)
-London
+[rC3](https://media.ccc.de/v/rc3-2020-158-datenguide-statistiken-fr-alle-)
+
+Mar 30
+: ^
+[Open Knowledge Lab](https://www.meetup.com/de-DE/OK-Lab-Berlin/events/cnrqbqybcfbmb/)
+Berlin
+
+## 2019
+June 29-30
+: ^
+[nr-Jahreskonferenz](https://nr19.sched.com/event/Lx3p)
+Hamburg
+
+## 2018
+Dec 30
+: ^
+[35C3](https://media.ccc.de/v/35c3-32-datenguide-projektvorstellung-workshop)
+Leipzig
 
 Aug 22
 : ^
@@ -17,12 +33,12 @@ Berlin
 
 May 2-4
 : ^
-[re:publica](https://18.re-publica.com/en)
+[re:publica](https://18.re-publica.com/de/session/statistik-alle-wir-hacken-statistische-bundesamt)
 Berlin
 
 June 29-30
 : ^
-[nr-Jahreskonferenz](https://netzwerkrecherche.org/termine/konferenzen/jahreskonferenzen/nr-jahreskonferenz-2018/)
+[nr-Jahreskonferenz](https://nr18.sched.com/event/E4wW/workshop-statistik-fur-alle-recherchen-beim-statistisches-bundesamt-ausgebucht)
 Hamburg
 
 ## 2017
@@ -34,24 +50,24 @@ Dortmund
 
 August 3-4
 : ^
-[SRCCON](https://srccon.org/sessions/#proposal-745068)
+[SRCCON](https://2017.srccon.org/schedule/#_session-climate-change-personal)
 Minneapolis
 
 May 23
 : ^
-[The Story Hunt](https://storyhunt.de/#workshops)
+[The Story Hunt](https://web.archive.org/web/20190228215211/https://storyhunt.de/#workshops)
 Berlin
 
 May 2-3
 : ^
-[csv,conf](https://csvconf.com/speakers/#simon-jockers)
+[csv,conf](https://csvconf.com/2017/speakers/#simon-jockers)
 Portland
 
 ## 2016
 
 October 28-30
 : ^
-[Mozilla Festival](https://app.mozillafestival.org/#_session-532)
+[Mozilla Festival](https://web.archive.org/web/20161204203723/https://app.mozillafestival.org/#_session-532)
 London
 
 July 8-9
